@@ -17,24 +17,24 @@ use Illuminate\Support\Facades\Route;
 // Rotta home
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 // Rotta header
-Route::get('/', function () {
+Route::get('/header', function () {
     return view('header');
-});
+})->name('header');
 
 // Rotta jumbotrone
-Route::get('/', function () {
+Route::get('/jumbtrone', function () {
     return view('jumbotrone');
-});
+})->name('jumbotrone');
 
 // Rotta main
-Route::get('/', function () {
+Route::get('/main', function () {
     return view('main');
-});
+})->name('main');
 
 // Rotta footer
-Route::get('/', function () {
+Route::get('/footer', function () {
     return view('footer');
-});
+})->name('footer');

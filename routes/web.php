@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 // Rotta home
 Route::get('/', function () {
-    return view('home');
+    $title ='Home';
+    return view('home', compact('title'));
 })->name('home');
 
 // Rotta header

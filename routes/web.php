@@ -13,6 +13,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// Rotta home
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+// Rotta header
+Route::get('/', function () {
+    return view('header');
+});
+
+// Rotta jumbotrone
+Route::get('/', function () {
+    return view('jumbotrone');
+});
+
+// Rotta main
+Route::get('/', function () {
+    return view('main');
+});
+
+// Rotta footer
+Route::get('/', function () {
+    return view('footer');
 });

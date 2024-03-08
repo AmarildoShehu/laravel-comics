@@ -8,11 +8,6 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-<header>
-        <li><a href="{{ route('header')}}">Header</a></li>
-        <li><a href="{{ route('jumbotrone')}}">Jumbotrone</a></li>
-        <li><a href="{{ route('main')}}">Main</a></li>
-        <li><a href="{{ route('footer')}}">Footer</a></li>
-    </header>
+
 </body>
 </html>

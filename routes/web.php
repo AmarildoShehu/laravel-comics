@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/comics', function () {
+    return view('comics');
+})->name('comics');
 
 // Rotta home
 Route::get('/', function () {
@@ -21,21 +24,21 @@ Route::get('/', function () {
 })->name('home');
 
 // Rotta header
-Route::get('/header', function () {
-    return view('header');
-})->name('header');
+// Route::get('/header', function () {
+//     return view('header');
+// })->name('header');
 
 // Rotta jumbotrone
-Route::get('/jumbtrone', function () {
-    return view('jumbotrone');
-})->name('jumbotrone');
+// Route::get('/jumbtrone', function () {
+//     return view('jumbotrone');
+// })->name('jumbotrone');
 
-// Rotta main
-Route::get('/main', function () {
-    return view('main');
-})->name('main');
+// // Rotta main
+// Route::get('/main', function () {
+//     return view('main');
+// })->name('main');
 
-// Rotta footer
-Route::get('/footer', function () {
-    return view('footer');
-})->name('footer');
+// // Rotta footer
+// Route::get('/footer', function () {
+//     return view('footer');
+// })->name('footer');

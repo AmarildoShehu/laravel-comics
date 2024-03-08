@@ -14,14 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/comics', function () {
-    return view('comics');
+    return view('comics.index');
 })->name('comics');
 
-// Rotta home
 Route::get('/', function () {
-    $title ='Home';
-    return view('home', compact('title'));
-})->name('home');
+    return view('home');
+})->name('#');
 
 // Rotta header
 // Route::get('/header', function () {

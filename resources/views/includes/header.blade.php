@@ -1,7 +1,7 @@
 <header>
     <div class="wrapper flex">
         <figure>
-            <a href="{{route('#')}}"><img src="{{asset('images/dc-logo.png')}}" alt="DC Logo"></a>
+            <a href="{{route('#')}}"><img src="{{ asset('images/dc-logo.png') }}" alt="DC logo"></a>
         </figure>
        <h1>Header</h1>
        <form>

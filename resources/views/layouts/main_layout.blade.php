@@ -11,7 +11,7 @@
 </head>
 <body>
     @include('includes.header')
-    @include('includes.blue_section')
+
     @yield('main')
     
     @include('includes.footer')

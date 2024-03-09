@@ -25,26 +25,28 @@ header {
     }
 
     figure {
-        width: 70px;
-    }
-
-    form {
-        position: relative;
-
-        input {
-            border: none;
-            border-bottom: 2px solid $primary-color;
-            text-align: end;
-            padding-right: 30px;
+        height: 70px;
+        figure {
+            height: 70px;
         }
 
-        button {
-            position: absolute;
-            border: none;
-            background-color: transparent;
-            top: 3px;
-            right: 5px;
-            color: $primary-color;
+        form {
+            position: relative;
+
+            input {
+                border: none;
+                border-bottom: 2px solid #0282f9;
+                text-align: end;
+                padding-right: 30px;
+            }
+
+            button {
+                position: absolute;
+                border: none;
+                background-color: transparent;
+                top: 3px;
+                right: 5px;
+            }
         }
     }
 }

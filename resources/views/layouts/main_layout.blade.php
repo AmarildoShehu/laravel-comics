@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/svg+xml" href="{{asset('images/favicon.ico')}}" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' integrity='sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==' crossorigin='anonymous'/>
-    <title>{{ env('APP_NAME')}}</title>
+    <title>{{ env('APP_NAME') }}</title>
     @vite('resources/js/app.js')
 </head>
 <body>
     @include('includes.header')
 
-    @yield('main')
+    @include('includes.main')
     @include('includes.blue_section')
     @include('includes.footer')
 </body>

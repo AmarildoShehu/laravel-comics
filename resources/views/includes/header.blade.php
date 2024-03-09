@@ -1,12 +1,27 @@
-<header>
-    <div class="wrapper flex">
-        <figure>
-            <a href="{{route('#')}}"><img src="{{ asset('images/dc-logo.png') }}" alt="DC logo"></a>
-        </figure>
-       <h1>Header</h1>
-       <form>
-            <input type="text" placeholder="Search">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-    </div>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>    
+    <header>
+        <div class="wrapper flex">
+            <figure>
+            <a href="#"><img src="{{asset('images/dc-logo.png')}}" alt="DC Logo"></a>
+            </figure>
+            <nav>
+                <ul class="flex">
+                    @foreach ( $links = config('header_links') as $link )
+                    <li>
+                        <a href="{{$link['url']}}">{{$link['text']}}</a>
+                    </li>                    
+                    @endforeach
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
